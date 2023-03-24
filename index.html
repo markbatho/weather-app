@@ -4,24 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TOP Weather</title>
 </head>
 <body>
     <header>
-        <a href="#">TOP Weather</a>
-        <form>
-            <input type="text" id="search-city" name="search-city">
-        </form>
+        <div class="container">
+            <a href="#">TOP Weather</a>
+            <form id="form">
+                <input type="text" id="search-city" name="search-city">
+            </form>
+        </div>
     </header>
     <main>
         <div class="container">
             <div id="error"></div>
+            <small><div id="description"></div></small>
             <div class="location">
-                <div id="city"></div>
-                <div id="country"></div>
+                <h1>
+                    <div id="city"></div>,&nbsp;
+                    <div id="country"></div>
+                </h1>
             </div>
             <div class="temperature">
-                <div id="temp"></div>
+                <h1 class="param"><div id="temp"></div>˚C</h1>
+            </div>
+            <div class="params">
+                <div class="param">
+                    <div>Feels like:</div>
+                    <div class="value">
+                        <div id="feels-like"></div>
+                        <div>˚C</div>
+                    </div>
+                </div>
+                <div class="param">
+                    <div>Humidity:</div>
+                    <div class="value">
+                        <div id="humidity"></div>
+                        <div>%</div>
+                    </div>
+                </div>
+                <div class="param">
+                    <div>Pressure:</div>
+                    <div class="value">
+                        <div id="pressure"></div>
+                        <div>hPa</div>
+                    </div>
+                </div>
+                <div class="param">
+                    <div>Wind Speed:</div>
+                    <div class="value">
+                        <div id="wind-speed"></div>
+                        <div>m/s</div>
+                    </div>
+                </div>
+                <div class="param">
+                    <div>Wind DEG:</div>
+                    <div class="value">
+                        <div id="wind-deg"></div>
+                        <div>˚</div>
+                    </div>
+                </div>
+                <div class="param">
+                    <div>Visibility:</div>
+                    <div class="value">
+                        <div id="visibility"></div>
+                        <div>km</div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
